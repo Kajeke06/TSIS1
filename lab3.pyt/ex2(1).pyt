@@ -7,4 +7,4 @@ try:
     result = grams_to_ounces(grams_amount)
     print(f"{grams_amount} grams is equal to {result:.2f} ounces.")
 except ValueError:
-    print("Invalid input. Please enter a valid number for grams.")
+    print("ERror")

@@ -11,3 +11,4 @@ input_list = [int(num) for num in input_list]
 result = unique_elements(input_list)
 print( input_list)
 print(result)
+
