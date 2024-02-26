@@ -1,6 +1,6 @@
 import re
 string = input()
-matches = re.findall(r'a\w*b', string)
-print("")
+x = r'(a\w*b)'
+matches = re.findall(x, string)
 for match in matches:
     print(match)

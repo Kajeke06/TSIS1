@@ -1,9 +1,5 @@
-def Kajeke(string):
-    result = []
-    for char in string:
-        if char.isupper():
-            result.append(char)
-    return result
-string = input()
-result = Kajeke(string)
-print(result)
+import re
+f = r'[A-Z][a-z]*'
+capitals = "TemaOmirBilimPekinAtlas"
+x = re.findall(f, capitals)
+print(x)
