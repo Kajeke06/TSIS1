@@ -24,7 +24,7 @@ def start_new_game():
 
     product_lifetime = 5
     start_time = time.time()
-    apple_color = 'red'  # Initialize apple color
+    apple_color = 'red' 
 
     running = True
     while running:
@@ -32,7 +32,6 @@ def start_new_game():
         screen.fill(pygame.Color('black'))
         [(pygame.draw.rect(screen, pygame.Color('green'), (i, j, SIZE - 2, SIZE - 2))) for i, j in snake]
 
-        # Draw apple with current color
         pygame.draw.rect(screen, pygame.Color(apple_color), (*apple, SIZE, SIZE))
 
         render_score = font_score.render(f'SCORE: {score}', 1, pygame.Color('orange'))
@@ -42,7 +41,6 @@ def start_new_game():
         snake.append((x, y))
         snake = snake[-length:]
         if snake[-1] == apple:
-            # Change apple color every other time it appears
             apple_color = 'yellow' if apple_color == 'red' else 'red'
             apple = randrange(0, RES, SIZE), randrange(0, RES, SIZE)
             length += 1

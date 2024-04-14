@@ -9,7 +9,7 @@ width = 800
 height = 600
 active_size = 0
 active_color = 'white'
-active_shape = 'circle'  # Переменная для хранения текущей формы кисти
+active_shape = 'circle'
 
 screen = pygame.display.set_mode([width, height])
 pygame.display.set_caption("NazarSal")
